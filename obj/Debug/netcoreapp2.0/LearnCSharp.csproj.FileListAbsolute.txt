@@ -1,0 +1,10 @@
+D:\LearnProject\LearnCSharp\LearnCSharp\bin\Debug\netcoreapp2.0\LearnCSharp.deps.json
+D:\LearnProject\LearnCSharp\LearnCSharp\bin\Debug\netcoreapp2.0\LearnCSharp.runtimeconfig.json
+D:\LearnProject\LearnCSharp\LearnCSharp\bin\Debug\netcoreapp2.0\LearnCSharp.runtimeconfig.dev.json
+D:\LearnProject\LearnCSharp\LearnCSharp\bin\Debug\netcoreapp2.0\LearnCSharp.dll
+D:\LearnProject\LearnCSharp\LearnCSharp\bin\Debug\netcoreapp2.0\LearnCSharp.pdb
+D:\LearnProject\LearnCSharp\LearnCSharp\obj\Debug\netcoreapp2.0\LearnCSharp.csproj.CoreCompileInputs.cache
+D:\LearnProject\LearnCSharp\LearnCSharp\obj\Debug\netcoreapp2.0\LearnCSharp.AssemblyInfoInputs.cache
+D:\LearnProject\LearnCSharp\LearnCSharp\obj\Debug\netcoreapp2.0\LearnCSharp.AssemblyInfo.cs
+D:\LearnProject\LearnCSharp\LearnCSharp\obj\Debug\netcoreapp2.0\LearnCSharp.dll
+D:\LearnProject\LearnCSharp\LearnCSharp\obj\Debug\netcoreapp2.0\LearnCSharp.pdb
