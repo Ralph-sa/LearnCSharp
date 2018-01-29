@@ -1,0 +1,2 @@
+# LearnCSharp
+Learn and Note
