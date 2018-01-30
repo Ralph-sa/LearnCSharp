@@ -1,21 +1,26 @@
 using System;
 namespace LearnCSharp
 {
+
     /// <summary>
-    /// 继承 只支持 类和接口
+    /// 多态
+    /// 特点:1.运行时,在方法参数,集合,数组重,派生对象可作为基类的对象处理,声明类型与运行时不同
+    /// 2.基类可以定义并实现虚方法,派生类来重写他们,可以调用基类方法,执行该方法的派生类版本.
     /// </summary>
     public class Inherit2
     {
         public void Fun()
         {
+            //多态性特点1.派生对象作为基类对象处理
             Shape[] shapes =
             {
                 new Circle(1,"shapes #1"),
                 new Rectangle(2,3,"Rectangle #1")
             };
+            //多态特点2.虚方法MakeArea() 被每个派生类调用而不是基类.
             foreach (Shape s in shapes)
             {
-
+                s.MakeArea();
                 Console.WriteLine(s);
             }
         }
