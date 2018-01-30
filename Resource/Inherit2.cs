@@ -1,4 +1,5 @@
 using System;
+//using System.Collections.Generic;
 namespace LearnCSharp
 {
 
@@ -23,11 +24,17 @@ namespace LearnCSharp
                 s.MakeArea();
                 Console.WriteLine(s);
             }
+            Console.WriteLine(Shape.conValue);
+            Shape shape = new Circle(2, "2222");
+            Console.WriteLine(shape.array.Length);
+
         }
     }
 
     public abstract class Shape
     {
+        public const int conValue = 99;
+        public readonly int[] array = new int[3] { 1, 2, 3 };
         private string name;
         public Shape(string _id)
         {
@@ -81,6 +88,40 @@ namespace LearnCSharp
         public override void MakeArea()
         {
             Console.WriteLine("Circle");
+        }
+    }
+    public interface Ichange
+    {
+        //int x;//接口不允许字段
+        //const int x = 99;//接口不允许常量
+        // static void Fun();//接口不允许静态函数
+        void Fun();//方法
+        int Y { get; set; }//属性
+        event EventHandler Onchange;//事件
+    }
+    public class Change : Ichange
+    {
+        int _x;
+        event EventHandler handler1;
+        event EventHandler Ichange.Onchange
+        {
+            add
+            {
+                handler1 += value;
+            }
+            remove
+            {
+                handler1 -= value;
+            }
+        }
+        public void Fun()
+        {
+
+        }
+        public int Y
+        {
+            get { return _x; }
+            set { _x = value; }
         }
     }
 }
