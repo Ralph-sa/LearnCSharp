@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace LearnCSharp
 {
     class Program
@@ -20,7 +19,8 @@ namespace LearnCSharp
             //MakeStrCom();
             //MakeBoxing();
             // MakeHashtable();
-            MakeGeneric();
+            //MakeGeneric();
+            MakeValRefCopy();
         }
         private static void Print(string s)
         {
@@ -116,6 +116,19 @@ namespace LearnCSharp
         {
             HashTableTest ht = new HashTableTest();
             ht.SpeedGeneric();
+        }
+        static void MakeValRefCopy()
+        {
+            RefClass _ref = new RefClass(1);
+            ValClass _val = new ValClass(1);
+
+            ValRefComp v = new ValRefComp(_ref, _val);
+            ValRefComp v2 = (ValRefComp)v.Clone();
+            Console.WriteLine(v._ref.x + "\\\\" + v._val.x);
+            Console.WriteLine(v2._ref.x + "\\\\" + v2._val.x);
+            v._ref.x = v._val.x = 10;
+            Console.WriteLine(v._ref.x + "\\\\" + v._val.x);
+            Console.WriteLine(v2._ref.x + "\\\\" + v2._val.x);
         }
     }
 }
