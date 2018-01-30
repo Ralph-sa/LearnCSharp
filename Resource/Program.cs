@@ -20,7 +20,8 @@ namespace LearnCSharp
             //MakeBoxing();
             // MakeHashtable();
             //MakeGeneric();
-            MakeValRefCopy();
+            //MakeValRefCopy();
+            MakeShape();
         }
         private static void Print(string s)
         {
@@ -129,6 +130,11 @@ namespace LearnCSharp
             v._ref.x = v._val.x = 10;
             Console.WriteLine(v._ref.x + "\\\\" + v._val.x);
             Console.WriteLine(v2._ref.x + "\\\\" + v2._val.x);
+        }
+        static void MakeShape()
+        {
+            Inherit2 in2 = new Inherit2();
+            in2.Fun();
         }
     }
 }
