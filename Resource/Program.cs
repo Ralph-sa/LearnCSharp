@@ -21,7 +21,9 @@ namespace LearnCSharp
             // MakeHashtable();
             //MakeGeneric();
             //MakeValRefCopy();
-            MakeShape();
+            // MakeShape();
+            //MakeGenericList();
+            MakeGeneric3();
         }
         private static void Print(string s)
         {
@@ -135,6 +137,28 @@ namespace LearnCSharp
         {
             Inherit2 in2 = new Inherit2();
             in2.Fun();
+        }
+        static void MakeGenericList()
+        {
+            GenericList1<int> list = new GenericList1<int>();
+            int i = 0;
+            while (i < 10)
+            {
+                ++i;
+                list.AddHead(i);
+            }
+            foreach (var x in list)
+            {
+                Console.WriteLine(x);
+            }
+        }
+        static void MakeGeneric3()
+        {
+            int[] arr = new int[5] { 1, 2, 3, 4, 5 };
+            List<int> list = new List<int> { 1, 2, 3, 4, 5 };
+            Generic3 gl = new Generic3();
+            // gl.ProcessItems(arr);
+            gl.ProcessItems(list);
         }
     }
 }
