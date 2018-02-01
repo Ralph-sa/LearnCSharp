@@ -140,7 +140,7 @@ namespace LearnCSharp
         }
         static void MakeGenericList()
         {
-            GenericList1<int> list = new GenericList1<int>();
+            Generic1<int> list = new Generic1<int>();
             int i = 0;
             while (i < 10)
             {
